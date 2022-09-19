@@ -9,36 +9,66 @@ include 'conn.php'
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Peminjam - Starbhak Sarpras</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        <?php include 'style.css';?>
+    </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <th>No</th>
-            <th>ID Pinjam</th>
-            <th>Nama</th>
-            <th>Usia</th>
-            <th>Gmail</th>
-            <th>Action</th>
-        </tr>
-        <?php 
-        $sql = "SELECT * FROM peminjam";
-        $query = mysqli_query($conn,$sql);
-        while($value = mysqli_fetch_array($query)){ 
-            echo"
-            <tr>
-                <td>1</td>
-                <td>$value[id]</td>
-                <td>$value[nama]</td>
-                <td>$value[usia]</td>
-                <td>$value[gmail]</td>
-                <td>
-                    <a href='editform.php?id=".$value['id']."'>Edit</a>            
-                    <a href='delete.php?id=".$value['id']."'>Delete</a>
-                </td>
-            </tr>";
-        } 
-        ?>
-    </table>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="blank-profile-picture-973460_1280.jpg" alt="">
+            <h1>Starbhak Sarpras</h1>
+        </div>
+        <div class="list">
+            <ul>
+                <div>
+                    <li>
+                        <a href="">Data Peminjam</a>
+                    </li>
+                </div>
+                <div>
+                    <li>
+                        <a href="">Data Barang</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <p id="wm">Uji Level Tingkat XI</p>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>ID Pinjam</th>
+                    <th>Nama</th>
+                    <th>Usia</th>
+                    <th>Gmail</th>
+                    <th>Action</th>
+                </tr>
+                <?php 
+                $sql = "SELECT * FROM peminjam";
+                $query = mysqli_query($conn,$sql);
+                while($value = mysqli_fetch_array($query)){ 
+                    echo"
+                    <tr>
+                        <td>1</td>
+                        <td>$value[id]</td>
+                        <td>$value[nama]</td>
+                        <td>$value[usia]</td>
+                        <td>$value[gmail]</td>
+                        <td>
+                            <a href='editform.php?id=".$value['id']."'>Edit</a>            
+                            <a href='delete.php?id=".$value['id']."'>Delete</a>
+                        </td>
+                    </tr>";
+                } 
+                ?>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
