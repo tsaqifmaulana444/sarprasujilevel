@@ -86,8 +86,106 @@ body{
 }
 
 .content #wm{
-    font-size: 30px;
+    font-size: 32px;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 700;    
+    position: relative;
+    top: 50px;
+    left: 4%;
 }
+
+.button{
+    display: flex;
+    position: relative;
+    top: 70px;
+    left: 730px;
+}
+
+.button a button:first-child{
+    margin-left: 15px;
+    width: 240px;
+    height: 70px;
+    background-color: #292B2F;
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.table{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 110px;
+    left: 4%;
+}
+
+.table tr td{
+    padding: 5px 0;
+}
+
+.table tr th{
+    font-size: 28px;
+    width: 145px;
+    text-align: left;
+    padding: 0px 0 20px 2px;
+    box-sizing: border-box;
+}
+
+.table tr th:first-child{
+    width: 50px;
+}
+
+.table tr th:nth-child(3){
+    width: 170px;
+}
+
+.table tr th:nth-child(4){
+    width: 130px;
+}
+
+
+.table tr th:nth-child(6){
+    font-size: 28px;
+    width: 255px;
+}
+
+.table tr th{
+    color: #8a8a8a;
+}
+
+.table tr td{
+    font-size: 22px;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding-left: 3px;
+}
+
+.table tr td:last-child button:first-child{
+    background-color:#616F39;
+    width: 120px;
+    height: 45px;
+    border: none;
+    border-radius: 16px;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 0;
+}
+
+.table tr td:last-child button:last-child{
+    background-color: #CA3E47;
+    width: 120px;
+    height: 45px;
+    border: none;
+    border-radius: 16px;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 0;
+
+}
+
 
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Ubuntu', sans-serif; 
