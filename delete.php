@@ -1,6 +1,10 @@
 <?php
 include 'conn.php';
 
+if(isset($_GET['id'])){
+    header('Location: index.php');
+}
+
 $id = $_GET['id'];
 
     $sql = "DELETE FROM peminjam WHERE id='$id'";
