@@ -115,6 +115,13 @@ body{
     cursor: pointer;
 }
 
+.button a button:first-child:hover{
+    background-color: #8a8a8a;
+    color: #1b1b1b;
+    transition: 0.4s;
+    margin-left: -20px;
+}
+
 .table{
     font-family: 'Roboto', sans-serif;
     position: relative;
@@ -138,14 +145,21 @@ body{
     width: 50px;
 }
 
-.table tr th:nth-child(3){
+.table tr td:nth-child(3){
     width: 170px;
 }
 
-.table tr th:nth-child(4){
+.table tr td:nth-child(4){
     width: 130px;
 }
 
+.table tr th:nth-child(5){
+    width: 130px;
+}
+
+.table tr td:nth-child(5){
+    width: 100px;
+}
 
 .table tr th:nth-child(6){
     font-size: 28px;
@@ -163,7 +177,7 @@ body{
     padding-left: 3px;
 }
 
-.table tr td:last-child button:first-child{
+.table tr td:last-child a:first-of-type button{
     background-color:#616F39;
     width: 120px;
     height: 45px;
@@ -172,9 +186,10 @@ body{
     font-size: 22px;
     font-weight: 400;
     padding-left: 0;
+    cursor: pointer;
 }
 
-.table tr td:last-child button:last-child{
+.table tr td:last-child a:last-of-type button{
     background-color: #CA3E47;
     width: 120px;
     height: 45px;
@@ -183,9 +198,8 @@ body{
     font-size: 22px;
     font-weight: 400;
     padding-left: 0;
-
+    cursor: pointer;
 }
-
 
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Ubuntu', sans-serif; 

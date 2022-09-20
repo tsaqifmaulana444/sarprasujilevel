@@ -40,7 +40,7 @@ include 'conn.php'
     <div class="content">
         <p id="wm">Uji Level Tingkat XI</p>
         <div class="button">
-            <a href="create.html"><button>Tambahkan Peminjam</button></a>
+            <a href="create.php"><button>Tambahkan Peminjam</button></a>
         </div>
         <div class="table">
             <table>
@@ -53,27 +53,29 @@ include 'conn.php'
                     <th>Action</th>
                 </tr>
                 <?php 
+                $i = 1;
+                $j = $i++;
                 $sql = "SELECT * FROM peminjam";
                 $query = mysqli_query($conn,$sql);
                 while($value = mysqli_fetch_array($query)){    
                     echo"
                     <tr>
-                        <td>1</td>
+                        <td>$j</td>
                         <td>$value[id]</td>
                         <td>$value[nama]</td>
                         <td>$value[usia] Tahun</td>
                         <td>$value[gmail]</td>
                         <td>
+                          
+                            <a href='editform.php?id=".$value['id']."'><button>Edit</button></a>            
+                          
                             <button>
-                            <a href='editform.php?id=".$value['id']."'>Edit</a>            
-                            </button>
-                            <button>
-                            <a href='delete.php?id=".$value['id']."'>Delete</a>
+                            <a href='delete.php?id=".$value['id']."'><button>Delete</button></a>
                             </button>
                         </td>
                     </tr>";
                 } 
-                ?>
+                ?> 
             </table>
         </div>
     </div>

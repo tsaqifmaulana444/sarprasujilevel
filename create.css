@@ -91,7 +91,7 @@ body{
 
 form table{
     position: relative;
-    top: 180px;
+    top: 140px;
     left: 4%;
 }
 
@@ -130,7 +130,7 @@ table tr td:last-child input{
     font-family: 'Ubuntu', sans-serif; 
 }
 
-form #input{
+form #inp{
     width: 250px;
     height: 60px;
     font-size: 23px;
@@ -141,7 +141,25 @@ form #input{
     border-radius: 18px;
     border: none;
     position: relative;
-    
+    top: 170px;
+    left: 700px;
+    cursor: pointer;
+}   
+
+form #inp:hover{
+    background-color: #8a8a8a;
+    color: #1b1b1b;
+    transition: 0.4s;
+}
+
+
+.content #info{
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 700;    
+    position: relative;
+    top: 110px;
+    left: 4%;
 }
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Ubuntu', sans-serif; 
