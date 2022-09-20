@@ -50,7 +50,7 @@ $value = mysqli_fetch_assoc($query);
             <table>
                 <tr>
                     <td><pre>ID Pinjam : </pre></td>
-                    <td>(Didapatkan secara otomatis)</td>
+                    <td><input type="hidden" name="id" value="<?=$value ['id'] ?>"></td>                    
                 </tr>
                 <tr>
                     <td><pre>Nama : </pre></td>

@@ -75,6 +75,13 @@ body{
     position: absolute;
     top: 0;
     left: 200px;
+    width: fit-content;
+    height: 420px;
+    overflow: auto;
+}
+
+.table::-webkit-scrollbar{
+    display: none;
 }
 .content{
     width: 1030px;
@@ -119,11 +126,12 @@ body{
     background-color: #8a8a8a;
     color: #1b1b1b;
     transition: 0.4s;
-    margin-left: -20px;
+    margin-left: -10px;
 }
 
 .table{
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     position: relative;
     top: 110px;
     left: 4%;
@@ -185,7 +193,6 @@ body{
     border-radius: 16px;
     font-size: 22px;
     font-weight: 400;
-    padding-left: 0;
     cursor: pointer;
 }
 
@@ -197,8 +204,17 @@ body{
     border-radius: 16px;
     font-size: 22px;
     font-weight: 400;
-    padding-left: 0;
     cursor: pointer;
+}
+
+.table tr td:last-child a:first-of-type button:hover{
+    transition: 0.3s;
+    background-color: #829451;
+}
+
+.table tr td:last-child a:last-of-type button:hover{
+    transition: 0.3s;
+    background-color: #d3535c;
 }
 
 /* font-family: 'Roboto', sans-serif;

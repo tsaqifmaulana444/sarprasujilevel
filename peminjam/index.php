@@ -66,12 +66,8 @@ include 'conn.php'
                         <td>$value[usia] Tahun</td>
                         <td>$value[gmail]</td>
                         <td>
-                          
                             <a href='editform.php?id=".$value['id']."'><button>Edit</button></a>            
-                          
-                            <button>
                             <a href='delete.php?id=".$value['id']."'><button>Delete</button></a>
-                            </button>
                         </td>
                     </tr>";
                 } 
