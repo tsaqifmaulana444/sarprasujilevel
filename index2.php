@@ -13,7 +13,7 @@ include 'conn.php'
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        <?php include 'style.css';?>
+        <?php include 'style2.css';?>
     </style>
 </head>
 <body>
@@ -40,37 +40,38 @@ include 'conn.php'
     <div class="content">
         <p id="wm">Uji Level Tingkat XI</p>
         <div class="button">
-            <a href="create.php"><button>[+] Tambahkan Peminjam</button></a>
+            <a href="create2.php"><button>[+]Tambahkan Barang</button></a>
         </div>
         <div class="table">
             <table>
                 <tr>
                     <th>No</th>
-                    <th>ID Pinjam</th>
-                    <th>Nama</th>
-                    <th>Usia</th>
-                    <th>Gmail</th>
+                    <th>ID Barang</th>
+                    <th>Nama Barang</th>
+                    <th>Jumlah Unit</th>
+                    <th>Barang Dipinjam</th>
                     <th>Action</th>
                 </tr>
                 <?php 
                 $i = 1;
-                $sql = "SELECT * FROM peminjam";
+                
+                $sql = "SELECT * FROM barang";
                 $query = mysqli_query($conn,$sql);
                 while($value = mysqli_fetch_array($query)){    
                     echo"
                     <tr>
-                        <td>$i</td>
-                        <td>$value[id]</td>
-                        <td>$value[nama]</td>
-                        <td>$value[usia] Tahun</td>
-                        <td>$value[gmail]</td>
+                    <td>$i</td>
+                    <td>$value[id]</td>
+                    <td>$value[nama_barang]</td>
+                        <td>$value[jumlah_unit]</td>
+                        <td>$value[dipinjam]</td>
                         <td>
-                            <a href='editform.php?id=".$value['id']."'><button>Edit</button></a>            
-                            <a href='delete.php?id=".$value['id']."'><button>Delete</button></a>
-                            </td>
-                            </tr>";
-                        $i++;
-                    } 
+                            <a href='editform2.php?id=".$value['id']."'><button>Edit</button></a>            
+                            <a href='delete2.php?id=".$value['id']."'><button>Delete</button></a>
+                        </td>
+                        </tr>";
+                    $i++;    
+                } 
                 ?> 
             </table>
         </div>

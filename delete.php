@@ -15,5 +15,9 @@ $id = $_GET['id'];
     }else{
         header('Location: delete.php?status=failed');
     }
-
+    echo"
+<script>
+    alert('sucessfully deleted!');
+    docu
+</script>"
 ?>

@@ -54,7 +54,7 @@ body{
     box-sizing: border-box;
 }
 
-.sidebar .list ul div:first-child{
+.sidebar .list ul div:last-child{
     background-color: #7d7d7d;
     border-radius: 30px 0 0 30px;
 }
@@ -133,7 +133,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     position: relative;
-    top: 110px;
+    top: 100px;
     left: 4%;
 }
 
@@ -142,11 +142,12 @@ body{
 }
 
 .table tr th{
-    font-size: 25px;
+    font-size: 24px;
     width: 145px;
     text-align: left;
     padding: 0px 0 20px 2px;
     box-sizing: border-box;
+    
 }
 
 .table tr th:first-child{
@@ -162,11 +163,7 @@ body{
 }
 
 .table tr th:nth-child(5){
-    width: 100px;
-}
-
-.table tr td:nth-child(5){
-    width: 100px;
+    width: 130px;
 }
 
 .table tr td:nth-child(5){

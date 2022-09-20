@@ -1,3 +1,13 @@
+<?php 
+include 'conn.php';
+$id = $_GET['id'];
+$sql = "SELECT * FROM barang WHERE id = '$id'";
+$query = mysqli_query($conn,$sql);
+$value = mysqli_fetch_assoc($query);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        <?php include 'create.css';?>
+        <?php include 'create2.css';?>
     </style>
 </head>
 <body>
@@ -35,27 +45,27 @@
     </div>
     <div class="content">
         <p id="wm">Uji Level Tingkat XI</p>
-        <p id="info">Tambahkan Data Peminjam</p>
-        <form action="save.php" method="post">
+        <p id="info">Ubah Data Barang</p>
+        <form action="edit2.php" method="post">
             <table>
                 <tr>
                     <td><pre>ID Pinjam : </pre></td>
-                    <td>(Didapatkan secara otomatis)</td>
+                    <td><input type="hidden" name="id" value="<?=$value ['id'] ?>"></td>                    
                 </tr>
                 <tr>
-                    <td><pre>Nama : </pre></td>
-                    <td><input type="text" required name="nama"></td>
+                    <td><pre>Nama Barang : </pre></td>
+                    <td><input type="text" required name="nama_barang" value="<?=$value ['nama_barang'] ?>"></td>
                 </tr>
                 <tr>
-                    <td><pre>Usia : </pre></td>
-                    <td><input type="number" required name="usia"></td>
+                    <td><pre>Jenis Barang : </pre></td>
+                    <td><input type="number" required name="jumlah_unit" value="<?=$value ['jumlah_unit'] ?>"></td>
                 </tr>
                 <tr>
-                    <td><pre>Gmail : </pre></td>
-                    <td><input type="email" required name="gmail"></td>
+                    <td><pre>Barang Dipinjam : </pre></td>
+                    <td><input type="number" required name="dipinjam" value="<?=$value ['dipinjam'] ?>"></td>
                 </tr>
             </table>
-            <input id="inp" type="submit" value="Simpan Perubahan" name="add">
+            <input id="inp" type="submit" value="Simpan Perubahan" name="submit2">
         </form>
     </div>
 </body>

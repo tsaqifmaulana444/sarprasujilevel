@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #242424;
+}
+
+.sidebar{
+    position: fixed;
+    width: 450px;
+    height: 1000px;
+    background-color: #242424;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 400;
+}
+
+.sidebar .logo{
+    display: flex;
+    position: relative;
+    top: 45px;
+    left: 20px;
+    font-size: 15px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.sidebar .logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 90px;
+    box-sizing: border-box;
+}
+ .sidebar .logo h1{
+    margin-left: 5px;
+ }
+
+
+.sidebar .list ul div:first-child,
+.sidebar .list ul div:nth-child(2){
+    list-style: none;
+    position: relative;
+    top: 80px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 700;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.sidebar .list ul div:last-child{
+    background-color: #7d7d7d;
+    border-radius: 30px 0 0 30px;
+}
+
+.sidebar .list ul div:first-child li a:hover{
+    padding-left: 20px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.sidebar .list ul div:last-child li a:hover{
+    padding-left: 20px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.content{
+    width: 1030px;
+    height: 695px;
+    position: relative;
+    float: right;
+    background-color: #1b1b1b;
+    border-radius: 40px 0 0 40px;
+}
+
+.content #wm{
+    font-size: 32px;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 700;    
+    position: relative;
+    top: 50px;
+    left: 4%;
+}
+
+form table{
+    position: relative;
+    top: 140px;
+    left: 4%;
+    
+}
+
+table tr td{
+    width: fit-content;
+    font-family: 'Ubuntu', sans-serif; 
+    font-size: 30px;
+    font-weight: 700;
+}
+
+table tr td pre{
+    font-family: 'Ubuntu', sans-serif; 
+    font-size: 30px;
+    font-weight: 700;
+}
+
+table tr td:first-child{
+    width: 250px;
+    padding: 25px 0;
+    box-sizing: border-box;
+}
+
+table tr td:last-child{
+    width: 600px;
+}
+
+table tr td:last-child input{
+    width: 550px;
+    height: 54px;
+    border-radius: 15px;
+    color: #1b1b1b;
+    background-color: #bbbbbb;
+    font-size: 25px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+form #inp{
+    width: 250px;
+    height: 60px;
+    font-size: 23px;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 700;    
+    color: #fff;
+    background-color: #292B2F;
+    border-radius: 18px;
+    border: none;
+    position: relative;
+    top: 170px;
+    left: 700px;
+    cursor: pointer;
+}   
+
+form #inp:hover{
+    background-color: #8a8a8a;
+    color: #1b1b1b;
+    transition: 0.4s;
+}
+
+
+.content #info{
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 700;    
+    position: relative;
+    top: 110px;
+    left: 4%;
+}
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; 
+Roboto:wght@300;400;700&family=Ubuntu:wght@300;400;700&*/
