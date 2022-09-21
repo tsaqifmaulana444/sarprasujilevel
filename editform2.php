@@ -55,15 +55,15 @@ $value = mysqli_fetch_assoc($query);
                 </tr>
                 <tr>
                     <td><pre>Nama Barang : </pre></td>
-                    <td><input type="text" required name="nama_barang" value="<?=$value ['nama_barang'] ?>"></td>
+                    <td><input type="text" required name="nama_barang" value="<?=$value ['nama_barang'] ?>" autocomplete="off"></td>
                 </tr>
                 <tr>
                     <td><pre>Jenis Barang : </pre></td>
-                    <td><input type="number" required name="jumlah_unit" value="<?=$value ['jumlah_unit'] ?>"></td>
+                    <td><input type="number" required name="jumlah_unit" value="<?=$value ['jumlah_unit'] ?>" autocomplete="off"></td>
                 </tr>
                 <tr>
                     <td><pre>Barang Dipinjam : </pre></td>
-                    <td><input type="number" required name="dipinjam" value="<?=$value ['dipinjam'] ?>"></td>
+                    <td><input type="number" required name="dipinjam" value="<?=$value ['dipinjam'] ?>" autocomplete="off"></td>
                 </tr>
             </table>
             <input id="inp" type="submit" value="Simpan Perubahan" name="submit2">

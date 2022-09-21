@@ -55,15 +55,15 @@ $value = mysqli_fetch_assoc($query);
                 </tr>
                 <tr>
                     <td><pre>Nama : </pre></td>
-                    <td><input type="text" required name="nama" value="<?=$value ['nama'] ?>"></td>
+                    <td><input type="text" required name="nama" value="<?=$value ['nama'] ?>" autocomplete="off"></td>
                 </tr>
                 <tr>
                     <td><pre>Usia : </pre></td>
-                    <td><input type="number" required name="usia" value="<?=$value ['usia'] ?>"></td>
+                    <td><input type="number" required name="usia" value="<?=$value ['usia'] ?>" autocomplete="off"></td>
                 </tr>
                 <tr>
                     <td><pre>Gmail : </pre></td>
-                    <td><input type="email" required name="gmail" value="<?=$value ['gmail'] ?>"></td>
+                    <td><input type="email" required name="gmail" value="<?=$value ['gmail'] ?>" autocomplete="off"></td>
                 </tr>
             </table>
             <input id="inp" type="submit" value="Simpan Perubahan" name="submit">

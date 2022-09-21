@@ -9,7 +9,7 @@ body{
     overflow-x: hidden;
     background-color: #242424;
 }
-
+ 
 .sidebar{
     position: fixed;
     width: 450px;
@@ -24,7 +24,7 @@ body{
     position: relative;
     top: 45px;
     left: 20px;
-    font-size: 13px;
+    font-size: 15px;
     align-items: center;
     background-color: transparent;
 }
@@ -48,40 +48,15 @@ body{
     height: 70px;
     display: flex;
     align-items: center;
-    font-size: 19px;
+    font-size: 23px;
     font-weight: 700;
     padding-left: 40px;
     box-sizing: border-box;
 }
 
-.sidebar .list ul div:last-child{
+.sidebar .list ul div:first-child{
     background-color: #7d7d7d;
     border-radius: 30px 0 0 30px;
-}
-
-.sidebar .list ul div:first-child li a{
-    position: relative;
-    top: -5px;
-    margin-left: 9px;
-    color: #fff;
-}
-
-.sidebar .list ul div:last-child li i{
-    margin-left: -5px;
-    color: #fff;
-}
-
-.sidebar .list ul div:last-child li a{
-    position: relative;
-    top: -5px;
-    margin-left: 5px;
-    color: #fff;
-}
-
-.sidebar .list ul div:first-child li a:hover{
-    padding-left: 18px;
-    box-sizing: border-box;
-    transition: 0.3s;
 }
 
 .sidebar .list ul div:first-child li a:hover{
@@ -114,49 +89,90 @@ body{
     left: 4%;
 }
 
-form table{
+.profile{
+    width: fit-content;
+    position: absolute;
+    top: 130px;
+    left: 670px;
+}
+
+.profile img{
+    width: 250px;
+    height: 250px;
+}
+
+table{
     position: relative;
-    top: 140px;
+    top: 130px;
     left: 4%;
     
 }
 
 table tr td{
     width: fit-content;
-    font-family: 'Ubuntu', sans-serif; 
-    font-size: 22px;
-    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 table tr td pre{
-    font-family: 'Ubuntu', sans-serif; 
-    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
     font-weight: 700;
 }
 
 table tr td:first-child{
-    width: 250px;
-    padding: 25px 0;
+    width: 200px;
+    padding: 10px 0;
     box-sizing: border-box;
 }
 
-table tr td:last-child{
-    width: 600px;
+table tr:last-child{
+    width: auto
 }
 
-table tr td:last-child input{
-    width: 550px;
-    height: 54px;
+
+table tr:last-child td:last-child{
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+
+.conta{
+    position: relative;
+    background-color: #bbbbbb;  
     border-radius: 15px;
-    color: #1b1b1b;
-    background-color: #bbbbbb;
-    font-size: 25px;
-    padding-left: 15px;
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif; 
+    height: 120px;
+    overflow: auto;
+    width: 350px;
 }
 
-form #inp{
+.conta ul{
+    list-style: none;
+    position: relative;
+    top: 2px;
+    left: 15px;
+    font-weight: 400;
+}
+
+.conta ul li p{
+    color: #1b1b1b;
+    margin: 7px 0;
+}
+
+.conta::-webkit-scrollbar{
+    display: none;
+}
+
+.content #info{
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 700;    
+    position: relative;
+    top: 110px;
+    left: 4%;
+}
+
+#back{
     width: 180px;
     height: 55px;
     font-size: 15px;
@@ -167,26 +183,17 @@ form #inp{
     border-radius: 18px;
     border: none;
     position: relative;
-    top: 170px;
-    left: 700px;
+    top: 50px;
+    left: 740px;
     cursor: pointer;
 }   
 
-form #inp:hover{
+#back:hover{
     background-color: #8a8a8a;
     color: #1b1b1b;
     transition: 0.4s;
 }
 
-
-.content #info{
-    font-size: 24px;
-    font-family: 'Ubuntu', sans-serif; 
-    font-weight: 700;    
-    position: relative;
-    top: 110px;
-    left: 4%;
-}
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Ubuntu', sans-serif; 
 Roboto:wght@300;400;700&family=Ubuntu:wght@300;400;700&*/

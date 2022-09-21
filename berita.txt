@@ -1,0 +1,1 @@
+dalam file data.php hanya field nama, usia, dan gmail yang saya ambil dari database. untuk sisanya saya hanya membuatnya di html sebagai dummy data yang tidak saya ambil dari database

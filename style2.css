@@ -128,14 +128,16 @@ body{
 }
 
 .button a button:first-child{
+    display: flex;
+    align-items: center;
     margin-left: 15px;
-    width: 240px;
-    height: 70px;
+    width: 220px;
+    height: 50px;
     background-color: #292B2F;
     border: none;
     border-radius: 24px;
     color: #fff;
-    font-size: 24px;
+    font-size: 13px;
     font-family: 'Ubuntu', sans-serif; 
     font-weight: 700;
     cursor: pointer;
@@ -152,21 +154,23 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     position: relative;
-    top: 100px;
+    top: 130px;
     left: 4%;
 }
 
 .table tr td{
-    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding: 4px 0 4px 3px;
 }
 
 .table tr th{
-    font-size: 24px;
+    font-size: 25px;
     width: 145px;
     text-align: left;
-    padding: 0px 0 20px 2px;
+    padding: 0px 0 10px 2px;
     box-sizing: border-box;
-    
 }
 
 .table tr th:first-child{
@@ -174,15 +178,21 @@ body{
 }
 
 .table tr td:nth-child(3){
+    word-wrap: break-word;
+    max-width: 170px;
     width: 170px;
 }
 
-.table tr td:nth-child(4){
-    width: 130px;
+.table tr th:nth-child(4){
+    width: 160px;
 }
 
 .table tr th:nth-child(5){
-    width: 130px;
+    width: 150px;
+}
+
+.table tr td:nth-child(5){
+    width: 100px;
 }
 
 .table tr td:nth-child(5){
@@ -192,6 +202,8 @@ body{
 .table tr th:nth-child(6){
     font-size: 28px;
     width: 255px;
+    box-sizing: border-box;
+    padding-left: 5px;
 }
 
 .table tr th{
@@ -202,31 +214,35 @@ body{
 }
 
 .table tr td{
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 400;
     box-sizing: border-box;
-    padding-left: 3px;
+    padding: 3px 0 3px 3px;
 }
 
 .table tr td:last-child a:first-of-type button{
+    box-sizing: border-box;
+    margin-left: 5px;
     background-color:#616F39;
-    width: 120px;
-    height: 45px;
+    width: 75px;
+    height: 35px;
     border: none;
     border-radius: 16px;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 700;
     cursor: pointer;
 }
 
 .table tr td:last-child a:last-of-type button{
+    box-sizing: border-box;
+    margin-left: 1px;
     background-color: #CA3E47;
-    width: 120px;
-    height: 45px;
+    width: 75px;
+    height: 35px;
     border: none;
     border-radius: 16px;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 700;
     cursor: pointer;
 }
 

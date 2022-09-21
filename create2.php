@@ -16,7 +16,7 @@
 <body>
     <div class="sidebar">
         <div class="logo">
-            <img src="blank-profile-picture-973460_1280.jpg" alt="">
+            <img src="logo tb.png" alt="">
             <h1>Starbhak Sarpras</h1>
         </div>
         <div class="list">
@@ -47,15 +47,15 @@
                 </tr>
                 <tr>
                     <td><pre>Nama Barang: </pre></td>
-                    <td><input type="text" required name="nama_barang"></td>
+                    <td><input type="text" required name="nama_barang" autocomplete="off"></td>
                 </tr>
                 <tr>
                     <td><pre>Jumlah Barang : </pre></td>
-                    <td><input type="number" required name="jumlah_barang"></td>
+                    <td><input type="number" required name="jumlah_barang" autocomplete="off"></td>
                 </tr>
                 <tr>
                     <td><pre>Barang Dipinjam : </pre></td>
-                    <td><input type="number" required name="dipinjam"></td>
+                    <td><input type="number" required name="dipinjam" autocomplete="off"></td>
                 </tr>
             </table>
             <input id="inp" type="submit" value="Simpan Perubahan" name="add">

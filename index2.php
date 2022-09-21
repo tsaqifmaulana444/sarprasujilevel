@@ -20,7 +20,7 @@ include 'conn.php'
 <body>
     <div class="sidebar">
         <div class="logo">
-            <img src="blank-profile-picture-973460_1280.jpg" alt="">
+            <img src="logo tb.png" alt="">
             <h1>Starbhak Sarpras</h1>
         </div>
         <div class="list">
@@ -43,7 +43,7 @@ include 'conn.php'
     <div class="content">
         <p id="wm">Uji Level Tingkat XI</p>
         <div class="button">
-            <a href="create2.php"><button><i class="fa-solid fa-plus"></i> Tambahkan Barang</button></a>
+            <a href="create2.php"><button><pre>    </pre><i class="fa-solid fa-plus fa-3x"></i><pre>  </pre> Tambahkan Barang</button></a>
         </div>
         <div class="table">
             <table>
@@ -66,8 +66,8 @@ include 'conn.php'
                         <td>$i</td>
                         <td>$value[id]</td>
                         <td>$value[nama_barang]</td>
-                        <td>$value[jumlah_unit]</td>
-                        <td>$value[dipinjam]</td>
+                        <td>$value[jumlah_unit] Unit</td>
+                        <td>$value[dipinjam] Unit</td>
                         <td>
                             <a href='editform2.php?id=".$value['id']."'><button>Edit</button></a>            
                             <a href='delete2.php?id=".$value['id']."'><button>Delete</button></a>

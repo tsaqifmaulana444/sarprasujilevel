@@ -90,15 +90,6 @@ body{
     transition: 0.3s;
 }
 
-.table{
-    position: absolute;
-    top: 0;
-    left: 200px;
-    width: fit-content;
-    height: 420px;
-    overflow: auto;
-}
-
 .table::-webkit-scrollbar{
     display: none;
 }
@@ -128,14 +119,16 @@ body{
 }
 
 .button a button:first-child{
+    display: flex;
+    align-items: center;
     margin-left: 15px;
-    width: 240px;
-    height: 70px;
+    width: 220px;
+    height: 50px;
     background-color: #292B2F;
     border: none;
     border-radius: 24px;
     color: #fff;
-    font-size: 24px;
+    font-size: 13px;
     font-family: 'Ubuntu', sans-serif; 
     font-weight: 700;
     cursor: pointer;
@@ -148,11 +141,16 @@ body{
     margin-left: -10px;
 }
 
+
 .table{
+    position: absolute;
+    width: fit-content;
+    height: 420px;
+    overflow: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     position: relative;
-    top: 110px;
+    top: 130px;
     left: 4%;
 }
 
@@ -172,7 +170,14 @@ body{
     width: 50px;
 }
 
+.table tr td:nth-child(2){
+    width: 150px;
+    text-decoration: underline;
+}
+
 .table tr td:nth-child(3){
+    word-wrap: break-word;
+    max-width: 170px;
     width: 170px;
 }
 
@@ -189,12 +194,15 @@ body{
 }
 
 .table tr td:nth-child(5){
-    width: 100px;
+    word-wrap: break-word;
+    max-width: 150px;
 }
 
 .table tr th:nth-child(6){
     font-size: 28px;
     width: 255px;
+    padding-left: 5px;
+    box-sizing: border-box;
 }
 
 .table tr th{
@@ -205,31 +213,35 @@ body{
 }
 
 .table tr td{
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 400;
     box-sizing: border-box;
-    padding-left: 3px;
+    padding: 3px 0 3px 3px;
 }
 
 .table tr td:last-child a:first-of-type button{
+    box-sizing: border-box;
+    margin-left: 5px;
     background-color:#616F39;
-    width: 120px;
-    height: 45px;
+    width: 75px;
+    height: 35px;
     border: none;
     border-radius: 16px;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 700;
     cursor: pointer;
 }
 
 .table tr td:last-child a:last-of-type button{
+    box-sizing: border-box;
+    margin-left: 1px;
     background-color: #CA3E47;
-    width: 120px;
-    height: 45px;
+    width: 75px;
+    height: 35px;
     border: none;
     border-radius: 16px;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -242,6 +254,7 @@ body{
     transition: 0.3s;
     background-color: #d3535c;
 }
+
 
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Ubuntu', sans-serif; 

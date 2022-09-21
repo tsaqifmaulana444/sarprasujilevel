@@ -20,7 +20,7 @@ include 'conn.php'
 <body>
     <div class="sidebar">
         <div class="logo">
-            <img src="blank-profile-picture-973460_1280.jpg" alt="">
+            <img src="logo tb.png" alt="">
             <h1>Starbhak Sarpras</h1>
         </div>
         <div class="list">
@@ -43,7 +43,7 @@ include 'conn.php'
     <div class="content">
         <p id="wm">Uji Level Tingkat XI</p>
         <div class="button">
-            <a href="create.php"><button><i class="fa-solid fa-plus"></i> Tambahkan Peminjam</button></a>
+            <a href="create.php"><button><pre>   </pre><i class="fa-solid fa-plus fa-3x"></i><pre> </pre> Tambahkan Peminjam</button></a>
         </div>
         <div class="table">
             <table>
