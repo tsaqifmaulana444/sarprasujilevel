@@ -10,7 +10,10 @@ if(isset($_POST['add'])){
     $query = mysqli_query($conn,$sql);
 
     if($query){
-        header('Location: index.php');
+        echo "<script>
+        alert('data berhasil ditambahkan');
+        document.location.href = 'index.php';
+        </script>";
     }else{
         header('Location: save.php?status=failed');
     }

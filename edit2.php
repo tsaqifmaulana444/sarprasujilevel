@@ -12,7 +12,10 @@ if(isset($_POST['submit2'])){
     $query = mysqli_query($conn, $sql);
     
     if($query){
-        header('Location: index2.php');
+        echo "<script>
+        alert('data berhasil diubah');
+        document.location.href = 'index2.php';
+        </script>";
     }else{
         header('Location: editform2.php?status=failed');
     }

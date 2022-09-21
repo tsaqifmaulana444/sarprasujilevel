@@ -11,7 +11,10 @@ $id = $_GET['id'];
     $query = mysqli_query($conn,$sql);
 
     if($query){
-        header('Location: index.php');
+        echo "<script>
+        alert('data berhasil dihapus');
+        document.location.href = 'index.php';
+        </script>";
     }else{
         header('Location: delete.php?status=failed');
     }

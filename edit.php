@@ -12,7 +12,10 @@ if(isset($_POST['submit'])){
     $query = mysqli_query($conn , $sql);
     
     if($query){
-        header('Location: index.php');
+        echo "<script>
+        alert('data berhasil diubah');
+        document.location.href = 'index.php';
+        </script>";
     }else{
         header('Location: formedit.php?status=failed');
     }
