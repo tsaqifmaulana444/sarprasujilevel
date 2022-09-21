@@ -1,3 +1,13 @@
+<?php 
+include 'conn.php';
+$id = $_GET['id'];
+$sql = "SELECT * FROM peminjam WHERE id = '$id'";
+$query = mysqli_query($conn,$sql);
+$value = mysqli_fetch_assoc($query);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,14 +33,12 @@
             <ul>
                 <div>
                     <li>
-                        <i class="fa-solid fa-circle-user fa-2x"></i>
                         <a href="index.php">Data Peminjam</a>
                     </li>
                 </div>
                 <div>
                     <li>
-                        <i class="fa-solid fa-warehouse fa-2x"></i>
-                        <a href="index2.php">Data Barang</a>
+                        <a href="">Data Barang</a>
                     </li>
                 </div>
             </ul>
@@ -38,27 +46,28 @@
     </div>
     <div class="content">
         <p id="wm">Uji Level Tingkat XI</p>
-        <p id="info">Tambahkan Data Peminjam</p>
-        <form action="save.php" method="post">
+        <p id="info">Detail Peminjaman <?=$value ['nama'] ?></p>
+        <div class="profile"></div>
+        <form action="edit.php" method="post">
             <table>
                 <tr>
                     <td><pre>ID Pinjam : </pre></td>
-                    <td>(Didapatkan secara otomatis)</td>
+                    <td><?=$value ['id'] ?></td>                    
                 </tr>
                 <tr>
                     <td><pre>Nama : </pre></td>
-                    <td><input type="text" required name="nama"></td>
+                    <td><?=$value ['nama'] ?></td>
                 </tr>
                 <tr>
                     <td><pre>Usia : </pre></td>
-                    <td><input type="number" required name="usia"></td>
+                    <td><?=$value ['usia'] ?></td>
                 </tr>
                 <tr>
                     <td><pre>Gmail : </pre></td>
-                    <td><input type="email" required name="gmail"></td>
+                    <td><?=$value ['gmail'] ?></td>
                 </tr>
             </table>
-            <input id="inp" type="submit" value="Simpan Perubahan" name="add">
+            <input id="inp" type="submit" value="Simpan Perubahan" name="submit">
         </form>
     </div>
 </body>

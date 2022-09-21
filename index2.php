@@ -27,11 +27,13 @@ include 'conn.php'
             <ul>
                 <div>
                     <li>
+                        <i class="fa-solid fa-circle-user fa-2x"></i>
                         <a href="index.php">Data Peminjam</a>
                     </li>
                 </div>
                 <div>
                     <li>
+                        <i class="fa-solid fa-warehouse fa-2x"></i>
                         <a href="index2.php">Data Barang</a>
                     </li>
                 </div>
@@ -61,9 +63,9 @@ include 'conn.php'
                 while($value = mysqli_fetch_array($query)){    
                     echo"
                     <tr>
-                    <td>$i</td>
-                    <td>$value[id]</td>
-                    <td>$value[nama_barang]</td>
+                        <td>$i</td>
+                        <td>$value[id]</td>
+                        <td>$value[nama_barang]</td>
                         <td>$value[jumlah_unit]</td>
                         <td>$value[dipinjam]</td>
                         <td>

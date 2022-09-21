@@ -27,11 +27,13 @@ include 'conn.php'
             <ul>
                 <div>
                     <li>
+                        <i class="fa-solid fa-circle-user fa-2x"></i>
                         <a href="index.php">Data Peminjam</a>
                     </li>
                 </div>
                 <div>
                     <li>
+                        <i class="fa-solid fa-warehouse fa-2x"></i>
                         <a href="index2.php">Data Barang</a>
                     </li>
                 </div>
@@ -61,7 +63,7 @@ include 'conn.php'
                     echo"
                     <tr>
                         <td>$i</td>
-                        <td>$value[id]</td>
+                        <td><a href='data.php?id=".$value['id']."'>$value[id]</a></td>
                         <td>$value[nama]</td>
                         <td>$value[usia] Tahun</td>
                         <td>$value[gmail]</td>

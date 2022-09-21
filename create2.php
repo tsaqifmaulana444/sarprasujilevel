@@ -23,11 +23,13 @@
             <ul>
                 <div>
                     <li>
+                        <i class="fa-solid fa-circle-user fa-2x"></i>
                         <a href="index.php">Data Peminjam</a>
                     </li>
                 </div>
                 <div>
                     <li>
+                        <i class="fa-solid fa-warehouse fa-2x"></i>
                         <a href="index2.php">Data Barang</a>
                     </li>
                 </div>
