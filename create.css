@@ -105,15 +105,6 @@ body{
     border-radius: 25px 0 0 25px;
 }
 
-.content #wm{
-    font-size: 32px;
-    font-family: 'Ubuntu', sans-serif; 
-    font-weight: 700;    
-    position: relative;
-    top: 50px;
-    left: 4%;
-}
-
 form table{
     position: relative;
     top: 140px;

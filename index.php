@@ -41,7 +41,7 @@ include 'conn.php'
         </div>
     </div>
     <div class="content">
-        <p id="wm">Uji Level Tingkat XI</p>
+        <p id="wm">Data Peminjam</p>
         <div class="button">
             <a href="create.php"><button><pre>   </pre><i class="fa-solid fa-plus fa-3x"></i><pre> </pre> Tambahkan Peminjam</button></a>
         </div>

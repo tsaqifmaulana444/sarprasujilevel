@@ -37,7 +37,6 @@
         </div>
     </div>
     <div class="content">
-        <p id="wm">Uji Level Tingkat XI</p>
         <p id="info">Tambahkan Data Peminjam</p>
         <form action="save.php" method="post">
             <table>

@@ -45,7 +45,6 @@ $value = mysqli_fetch_assoc($query);
         </div>
     </div>
     <div class="content">
-        <p id="wm">Uji Level Tingkat XI</p>
         <p id="info">Detail Peminjaman ID <?=$value ['id'] ?></p>
         <div class="profile">
             <img src="blank-profile-picture-973460_1280.jpg" alt="">

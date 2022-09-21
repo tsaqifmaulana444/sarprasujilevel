@@ -45,7 +45,6 @@ $value = mysqli_fetch_assoc($query);
         </div>
     </div>
     <div class="content">
-        <p id="wm">Uji Level Tingkat XI</p>
         <p id="info">Ubah Data Barang</p>
         <form action="edit2.php" method="post">
             <table>
