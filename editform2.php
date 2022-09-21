@@ -57,7 +57,7 @@ $value = mysqli_fetch_assoc($query);
                     <td><input type="text" required name="nama_barang" value="<?=$value ['nama_barang'] ?>" autocomplete="off"></td>
                 </tr>
                 <tr>
-                    <td><pre>Jenis Barang : </pre></td>
+                    <td><pre>Jumlah Barang : </pre></td>
                     <td><input type="number" required name="jumlah_unit" value="<?=$value ['jumlah_unit'] ?>" autocomplete="off"></td>
                 </tr>
                 <tr>
